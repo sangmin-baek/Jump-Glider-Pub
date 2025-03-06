@@ -10,6 +10,8 @@ This project provides an embedded system for a jump-gliding robot. The system co
 ### 1. Robot Controller  
 The robot controller manages movement control and sensor data processing.  
 
+<img src="Jump-glider%20controller.jpeg" width="500">
+
 - **MCU**: STM32F4  
 - **DC Motor Drivers**: HR8833  
 - **IMU**: MPU9250 (9-axis motion sensor)  
@@ -20,11 +22,14 @@ The robot controller manages movement control and sensor data processing.
 ### 2. User Command Controller  
 The user command controller sends control signals to the robot via RF communication.  
 
+<img src="User%20command%20controller.jpeg" width="500">
+
 - **MCU**: STM32F4 Nucleo  
 - **Input Interfaces**:  
   - DIP switches (for mode selection)  
   - Tact switches (for discrete commands)  
-  - Joystick (for movement control)  
+  - Joystick (for movement control)
+  - Potentiometer  
 - **RF Communication**: HC-12  
 
 ## Software  
